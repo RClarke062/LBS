@@ -50,7 +50,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Add a marker in Ottawa and move the camera
         LatLng ottawa = new LatLng(45.4215, -75.6972);
         mMap.addMarker(new MarkerOptions().position(ottawa).title("Ottawa"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ottawa, 16));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ottawa, 4));
 
         mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener(){
             @Override
